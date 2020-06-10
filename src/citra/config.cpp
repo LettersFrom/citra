@@ -162,17 +162,17 @@ void Config::ReadValues() {
     Settings::values.custom_top_top =
         static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_top_top", 0));
     Settings::values.custom_top_right =
-        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_top_right", 400));
+        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_top_right", 1360));
     Settings::values.custom_top_bottom =
-        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_top_bottom", 240));
+        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_top_bottom", 384));
     Settings::values.custom_bottom_left =
-        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_left", 40));
+        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_left", 0));
     Settings::values.custom_bottom_top =
-        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_top", 240));
+        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_top", 384));
     Settings::values.custom_bottom_right =
-        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_right", 360));
+        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_right", 1360));
     Settings::values.custom_bottom_bottom =
-        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_bottom", 480));
+        static_cast<u16>(sdl2_config->GetInteger("Layout", "custom_bottom_bottom", 768));
 
     // Utility
     Settings::values.dump_textures = sdl2_config->GetBoolean("Utility", "dump_textures", false);
